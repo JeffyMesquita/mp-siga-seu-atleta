@@ -1,7 +1,7 @@
-import db from "@/prisma/db";
+import { prisma } from "@/prisma/db";
 
 export default async function Home() {
-  const sports = await db.sport.findMany();
+  const sports = await prisma.sport.findMany();
 
   return (
     <main>
