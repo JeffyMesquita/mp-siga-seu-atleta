@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${darkerGrotesque.className} antialiased`}>
+      <body
+        className={`${darkerGrotesque.className} antialiased bg-stone-200/75`}
+      >
         <Navbar />
         {children}
       </body>
