@@ -1,0 +1,1 @@
+export { AthleteCard } from "./AthleteCard";

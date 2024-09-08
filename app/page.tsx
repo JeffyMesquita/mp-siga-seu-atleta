@@ -6,6 +6,7 @@ import { Suspense } from "react";
 export default async function Home() {
   const athletes = await findAthletes();
   const sports = await findSports();
+  console.log("Home", athletes, sports);
 
   return (
     <main className="p-4 flex flex-col gap-12">
